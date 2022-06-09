@@ -4,6 +4,7 @@ Identificação de elementos verdes em fotos, usado para detectar folhas/mato em
 
 # Código
 
+```python
 import cv2
 import numpy as np
 import os 
@@ -38,3 +39,4 @@ for root, _, files in os.walk(caminho_imagem):
 
             vis = np.concatenate((img, img2), axis=1)
             cv2.imwrite(store, vis)
+```
